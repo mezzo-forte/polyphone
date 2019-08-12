@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PagePrst</class>
+ <widget class="QWidget" name="PagePrst">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>622</width>
+    <height>428</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>0</number>
+   </property>
+   <item row="1" column="0">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="TableWidgetPrst" name="tablePrst">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="autoScrollMargin">
+          <number>16</number>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::SelectedClicked</set>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::ExtendedSelection</enum>
+         </property>
+         <property name="textElideMode">
+          <enum>Qt::ElideMiddle</enum>
+         </property>
+         <property name="horizontalScrollMode">
+          <enum>QAbstractItemView::ScrollPerPixel</enum>
+         </property>
+         <attribute name="horizontalHeaderMinimumSectionSize">
+          <number>18</number>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>20</number>
+         </attribute>
+         <attribute name="verticalHeaderMinimumSectionSize">
+          <number>19</number>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="ModulatorEditor" name="modulatorEditor" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QGridLayout" name="gridLayout_4">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="GraphicsViewRange" name="rangeEditor">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QFrame" name="frameBottom">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>24</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="leftMargin">
+       <number>6</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>6</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Bank</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="SpinBox" name="spinBank">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="accelerated">
+         <bool>true</bool>
+        </property>
+        <property name="maximum">
+         <number>128</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Preset</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="SpinBox" name="spinPreset">
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="accelerated">
+         <bool>true</bool>
+        </property>
+        <property name="maximum">
+         <number>127</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelPercussion">
+        <property name="text">
+         <string>(percussion)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GraphicsViewRange</class>
+   <extends>QGraphicsView</extends>
+   <header>graphicsviewrange.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ModulatorEditor</class>
+   <extends>QWidget</extends>
+   <header>modulatoreditor.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TableWidgetPrst</class>
+   <extends>QTableWidget</extends>
+   <header>pageprst.h</header>
+  </customwidget>
+  <customwidget>
+   <class>SpinBox</class>
+   <extends>QSpinBox</extends>
+   <header>pageprst.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>spinBank</tabstop>
+  <tabstop>spinPreset</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>tablePrst</sender>
+   <signal>cellChanged(int,int)</signal>
+   <receiver>PagePrst</receiver>
+   <slot>set(int,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>119</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tablePrst</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>PagePrst</receiver>
+   <slot>selected()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>119</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBank</sender>
+   <signal>editingFinished()</signal>
+   <receiver>PagePrst</receiver>
+   <slot>setBank()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>85</x>
+     <y>12</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>310</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinPreset</sender>
+   <signal>editingFinished()</signal>
+   <receiver>PagePrst</receiver>
+   <slot>setPreset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>204</x>
+     <y>12</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>310</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>set(int,int)</slot>
+  <slot>selected()</slot>
+  <slot>setAmount()</slot>
+  <slot>setAbs()</slot>
+  <slot>afficheEditMod()</slot>
+  <slot>setSourceAmountType(int,int)</slot>
+  <slot>setSourceType(int,int)</slot>
+  <slot>setDest(int)</slot>
+  <slot>setSource(int)</slot>
+  <slot>setSource2(int)</slot>
+  <slot>nouveauMod()</slot>
+  <slot>supprimerMod()</slot>
+  <slot>setBank()</slot>
+  <slot>setPreset()</slot>
+  <slot>copyMod()</slot>
+  <slot>pasteMod()</slot>
+ </slots>
+</ui>
