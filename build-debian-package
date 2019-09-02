@@ -25,17 +25,16 @@ fi
 
 # Remove the execution flags
 chmod -R -x+X debian
-chmod -R -x+X ../sources
+chmod -R -x+X sources
 
 # Rename folder sources
-cd ..
 mv sources polyphone-$1
 
 # Create archive
 tar -zcvf polyphone_$1.orig.tar.gz polyphone-$1
 
 # Copy debian directory in sources
-cp -r deployment/debian polyphone-$1
+cp -r debian polyphone-$1
 
 # Build package
 cd polyphone-$1
